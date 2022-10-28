@@ -1,0 +1,251 @@
+/*Font Face*/
+@font-face {
+	font-family: fresher_heading;
+	src : url("../fonts/hollywood_hills/SF\ Hollywood\ Hills\ Bold.ttf");
+}
+@font-face {
+	font-family: main_heading;
+	src : url("../fonts/hollywood_hills/SF\ Hollywood\ Hills\ Bold.ttf");
+}
+
+@font-face {
+	font-family: faccha_exp;
+	src: url("../fonts/Hack-Bold.ttf");
+}
+
+@font-face {
+	font-family: button_text;
+	src: url("../fonts/Hack-Bold.ttf");
+}
+
+@font-face {
+	font-family: ping_heading;
+	src:url("../fonts/sf_zimmerman/SF\ Zimmerman\ Italic.ttf");
+}
+@font-face {
+	font-family: rustico;
+	src:url("../fonts/rustico.ttf");
+}
+
+/* CSS styles */
+
+div, body, html{
+	margin: 0;
+	box-sizing: border-box;
+	text-align: center;
+	overflow: hidden;
+}
+
+h1, h2{
+	text-align: center;
+}
+
+.row{
+	min-height: 50vh;
+	padding-top: 50px;
+	margin-left: 0 !important;
+}
+
+.rowSmall{
+	min-height: 50vh;
+	padding-top: 50px;
+	margin-left: 0 !important;
+}
+
+.rowSmall, .row > *{
+	width: 100vw !important;
+}
+
+.row, .row > *{
+	width: 100vw !important;
+}
+
+.green{
+	background-color: #009c68;
+}
+
+.orange{
+	background-color: #e1937c;
+}
+
+.blue{
+	background-color: #c4ecf9;
+}
+
+.yellow{
+	background-color: #e5be5c;
+}
+
+.purple{
+	background-color: #d26199;
+}
+
+.violet{
+	background-color: #251531;
+}
+
+.pink{
+	background-color: #ff869c;
+}
+
+.red{
+	background-color: #c94866;
+}
+
+.parent {
+	overflow-y: scroll;
+	height: 100vh;
+	scroll-snap-type: y;
+	scroll-behavior: smooth;
+}
+
+.row, .stop {
+	scroll-snap-align: center;
+	scroll-snap-stop: normal;
+}
+
+.stop-end {
+	scroll-snap-align: end;
+	scroll-snap-stop: always;
+}
+
+.box1 h1{
+	font-family: 'rustico', cursive;
+	color : #fcbe2f;
+	font-size: 4rem;
+}
+
+.box1 h2{
+	font-family: fresher_heading;
+	color: snow;
+	font-size: 3rem;
+}
+
+.img1{
+	padding-top: 5rem;
+	width: 40%;
+}
+
+.img2{
+	width: 50%;
+}
+
+.img5{
+	width: 50%;
+}
+
+.mid{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box2, .box3, .box4, .box5, .box6, .box_last{
+	font-family: faccha_exp;
+	color: #084582;
+	position: relative;
+}
+
+.box6{
+	padding:90px;
+}
+
+.box3 h1, .box4 h1, .box5 h1, .box6 h1, .box_last h1{
+	font-family: main_heading;
+	color: snow;
+}
+
+button{
+	font-family: button_text;
+}
+
+.img2, .img3{
+	position: absolute;
+	bottom: 0;
+	left: 45%;
+	transform: translateX(-50%);
+	padding: 0 15px;
+	width: 25%;
+}
+
+.img3, .img4, .img_last{
+	width: 30%;
+}
+
+.box4{
+	color: snow;
+}
+
+.col-lg-12 div{
+	padding-top: 3%;
+}
+
+.box5{
+	color: snow;
+}
+
+.col-lg-4{
+	display: flex;
+	align-items: center;
+}
+
+.col-lg-4 div, .col-lg-4 h1, .col-lg-4 h2{
+	text-align: left;
+}
+
+.desc{
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 2rem;
+	text-align: left;
+	background-color: #251531;
+}
+
+.desc div{
+	text-align: left;
+}
+
+.ftr{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 5%;
+	background-color: #251531;
+}
+
+.margin-box-left{
+	padding-left: 2rem;
+}
+
+@media only screen and (max-width: 400px) {	
+  .margin-box-left {
+    padding-left: 0;
+  }
+  
+  .row{
+  	min-height: 60vh;
+  }
+
+  h1{
+   	font-size: 11vw;
+  }
+
+  h2{
+   	font-size: 20px;
+  }
+
+  .img3{
+	position: relative;
+	padding: 0;
+  }
+  .img2 {
+	display: none;
+  }
+
+  button{
+  	margin-bottom: 2rem;
+  }
+
+  #space {
+	  padding-bottom: 100px;
+  }
+}
